@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Procont.digital</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/SocialIcons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-image: url(&quot;assets/img/fundosite.gif&quot;);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><div>
+<a href="index.html"><img src="assets/img/logotipofundoazul.svg" style="margin-top: 100px;width: 40%;margin-bottom: 100px;" class="logo"></a>
+</div><h2 style="text-align: left;color: rgb(255,255,255);font-size: 40px;font-family: Roboto;font-weight: bolder;">Ainda com <span style="color: #487cff;">dúvidas?</span></h2>
+                <h2 style="margin-top: 15px;text-align: left;color: rgb(255,255,255);font-size: 26px;font-family: Roboto;font-weight: lighter;">Estamos com os nossos contadores experts prontos para falar com você.&nbsp;<br></h2>
+                <h2 style="margin-top: 15px;text-align: left;color: rgb(255,255,255);font-size: 14px;font-family: Roboto;">Fique tranquilo(a) que o nosso contato é sem compromisso. Você só vai contratar a Procont quando tiver certeza de que somos a melhor opção para a sua empresa.<br></h2>
+            </div>
+            <div class="col-md-6">
+                <h2 style="margin-top: 50px;text-align: center;color: rgb(255,255,255);">Preencha os seus dados</h2>
+                <h5 style="text-align: center;color: rgb(255,255,255);">E receba o contato dos nossos especialistas</h5><head>
+<title>Formulario Abertura</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+<script type="text/javascript" src="EstadoeCidades.js"></script>
+
+</head>
+
+	<script type="text/javascript">
+    $("#telefone").mask("(00) 00000-0000");
+    </script>
+
+
+<form class="formulario">
+
+	<div class="form-group">
+    <label for="exampleFormControlSelect1">Qual serviço deseja?</label>
+    <select class="form-control" id="serviço" placeholder="Selecione o serviço" required>
+      <option>Selecione o serviço</option>
+      <option>Trocar de contador</option>
+      <option>Abertura de empresa</option>
+      <option>Mudar de MEI para ME</option>
+    </select>
+  </div>
+  
+   <div class="form-group">
+    <label for="exampleInputPassword1">Qual seu nome?</label>
+    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+  </div>
+	
+  <div class="form-group">
+    <label for="exampleInputEmail1">Qual seu e-mail?</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email completo" required>
+  </div>
+  
+    <div class="form-group">
+    <label>Qual o seu estado?</label>
+    <select class="form-control" id="estado" onchange="buscaCidades(this.value)" placeholder="Selecione seu estado" required>
+	<option value="estados">Selecione seu estado</option>
+	<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>>
+    </select>
+  </div>
+  
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Qual a sua cidade?</label>
+    <select class="form-control" id="cidade" required>
+	<option disabled>Selecione seu estado</option>
+    </select>
+  </div>
+  
+   <div class="form-group">
+    <label for="exampleInputPassword1">Telefone com DDD (apenas os números)</label>
+    <input type="text" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+  </div>
+  
+  <div class="informativo">
+    <p>Ao solicitar uma proposta, você concorda com nossos <a href="">Termos de uso</a> e <a href="">Política de privacidade</a>.<p>
+  </div>
+  
+  <div class="contato">
+  <button type="submit" class="btn btn-primary">RECEBA O NOSSO CONTATO</button>
+  </div>
+</form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/EstadoeCidades.js"></script>
+    <script src="assets/js/JavaScript.js"></script>
+</body>
+
+</html>

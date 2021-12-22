@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Procont.digital</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/SocialIcons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: #ffffff;margin-bottom: 10px;">
+        <div class="container"><div>
+<a href="index.html"><img src="assets/img/logotipo.svg" class="logo"></a>
+</div><button class="navbar-toggler" data-bs-toggle="collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><span id="navcol-1"><div class="collapse navbar-collapse" id="navcol-1">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+        <li class="nav-item"><a class="nav-link" href="Baixeagora.html">Baixe nosso app</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contato.html">Contato</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://app.gestta.com.br">Login</a></li>
+    </ul>
+</div></div>
+    </nav>
+    <header style="background-color: #ebf0ff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <section style="padding-top: 80px;margin-left: 30px;">
+                        <h6 class="introducao">Contabilidade</h6>
+                        <div></div>
+                        <h6 class="introducao">da sua empresa</h6>
+                        <div></div>
+                        <h6 class="introducao">de forma</h6>
+                        <div></div>
+<h6 class=introducao><span class="typed-text" style= "color: #003366"></span><span class="cursor">&nbsp;</span></h6>
+
+
+
+<script>
+
+
+
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["prática", "segura", "econômica", "online"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+
+
+</script>
+                    </section>
+                    <section><a href="Contato.html"><button class="btn btn-primary" id="buttoninicial" type="button">FALAR COM A PROCONT</button></a></section>
+                </div>
+                <div class="col-md-6">
+                    <section><img src="assets/img/ilustracaosite.svg" style="margin-top: 70px;width: 100%;" class="imageminicio"></section>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section style="text-align: left;background-color: #487cff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="color: #fff;padding: 30px;">Encontre o plano ideal para o seu negócio.<br></h5>
+                </div>
+                <div class="col-md-3 col-xl-3 offset-xl-0" style="display: inline-block;"><div class="row">
+    <div class="col-md-3 col-xl-3 offset-xl-0" style="display: inline-block;width: 120px;"><img src="assets/img/iconbasico.svg" style="width: 110%;margin-top: 30px;margin-bottom: 30px;" /></div>
+    <div class="col-md-3" style="width: 150px;">
+        <h4 style="color: #003366;font-size: 18px;margin-bottom: -10px;margin-top: 40px;">Básico</h4>
+        <h2 class="precoicone" style="color: #fff;"><span style="font-size: 18px;">R$</span><span style="font-size: 28px;">199/mês</span></h2><a href="#planos"><button class="btn btn-primary" type="button" style="color: #fff;background-color: #003366;border-radius: 10px;font-size: 10px;">Saiba mais</button></a>
+    </div>
+</div></div>
+                <div class="col"><div class="row">
+    <div class="col-md-3 col-xl-3 offset-xl-0" style="display: inline-block;width: 120px;"><img src="assets/img/iconplus.svg" style="width: 110%;margin-top: 30px;margin-bottom: 30px;" /></div>
+    <div class="col-md-3" style="width: 150px;">
+        <h4 style="color: #003366;font-size: 18px;margin-bottom: -10px;margin-top: 40px;">Plus</h4>
+        <h2 class="precoicone" style="color: #fff;"><span style="font-size: 18px;">R$</span><span style="font-size: 28px;">249/mês</span></h2><a href="#planos"><button class="btn btn-primary" type="button" style="color: #fff;background-color: #003366;border-radius: 10px;font-size: 10px;">Saiba mais</button></a>
+    </div>
+</div></div>
+                <div class="col-md-3"><div class="row">
+    <div class="col-md-3 col-xl-3 offset-xl-0" style="display: inline-block;width: 120px;"><img src="assets/img/iconpremium.svg" style="width: 110%;margin-top: 30px;margin-bottom: 30px;" /></div>
+    <div class="col-md-3" style="width: 150px;">
+        <h4 style="color: #003366;font-size: 18px;margin-bottom: -10px;margin-top: 40px;">Premium</h4>
+        <h2 class="precoicone" style="color: #fff;"><span style="font-size: 18px;">R$</span><span style="font-size: 28px;">299/mês</span></h2><a href="#planos"><button class="btn btn-primary" type="button" style="color: #fff;background-color: #003366;border-radius: 10px;font-size: 10px;">Saiba mais</button></a>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 50px;text-align: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><img src="assets/img/ScreenShowcase02.png" style="width: 80%;"></div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-bottom: 150px;margin-top: 50px;text-align: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><img src="assets/img/iconseguro.png" style="width: 30%;margin-bottom: 20px;">
+                    <h2 style="font-family: Roboto;font-weight: bold;color: #487cff;font-size: 28px;margin-bottom: 15px;">Seguro</h2>
+                    <p style="font-family: Roboto;color: #487cff;font-size: 18px;">Aplicativo super seguro, acompanhado por um contador com integração automática de dados e responsabilidade técnica.</p>
+                </div>
+                <div class="col-md-4"><img src="assets/img/iconverificado.png" style="width: 30%;margin-bottom: 20px;">
+                    <h2 style="font-family: Roboto;font-weight: bold;color: #487cff;font-size: 28px;margin-bottom: 15px;">Fácil</h2>
+                    <p style="font-family: Roboto;color: #487cff;font-size: 18px;">Experiência única do usuário. Navegação fácil e simplificada. Fale com seu contador das 09:00h às 12:00h e das 14:00h às 17:00h de segunda a sexta.</p>
+                </div>
+                <div class="col-md-4"><img src="assets/img/iconacessivel.png" style="width: 30%;margin-bottom: 20px;">
+                    <h2 style="font-family: Roboto;font-weight: bold;color: #487cff;font-size: 28px;margin-bottom: 15px;">Acessível</h2>
+                    <p style="font-family: Roboto;color: #487cff;font-size: 18px;">Preço fixo mensal, sem cobrança de serviços adicionais. Você sabe exatamente quanto custa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="text-align: center;"><div class="brands" id="planos"></div>
+        <h2 style="font-size: 40px;"><br>Encontre o plano ideal para o seu negócio.<br></h2>
+        <h3 style="font-size: 25px;color: #487cff;margin-bottom: 50px;">Qual plano se encaixa melhor para a sua empresa?<br></h3>
+        <div class="container">
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-4" style="margin-right: 50px;width: 25%;border-radius: 15px;box-shadow: 0.5px 0.5px 3px #212121;">
+                    <h1 style="margin-top: 20px;color: #487cff;background-color: #ffffff;width: auto;font-size: 40px;font-family: Roboto;font-weight: bold;">Básico</h1>
+                    <p style="color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 15px;font-family: Roboto;font-weight: 800;">PLANO PARA QUEM ESTÁ INICIANDO SEU NEGÓCIO</p>
+                    <h1 style="color: #212121;background-color: #ffffff;width: auto;font-size: 40px;font-family: Roboto;font-weight: bolder;margin-bottom: 20px;">R$ 199,00</h1>
+                    <ul style="text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 15px;font-family: Roboto;font-weight: 800;">
+                        <li>Abertura de Empresa (GRÁTIS)</li>
+                        <li>Contabilidade Completa</li>
+                        <li>Emissor de NF's</li>
+                        <li>Emissor de Boletos</li>
+                        <li>Painel Financeiro</li>
+                    </ul>
+                    <p style="margin-top: 97px;margin-left: 15px;text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 10px;font-family: Roboto;font-weight: 800;">Folha de pagamento cobrado à parte</p>
+                    <p style="margin-top: -15px;margin-left: 15px;text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 10px;font-family: Roboto;font-weight: 800;">Até R$ 25.000 de faturamento</p><a href="Contato.html"><button class="btn btn-primary" id="buttonpreco" type="button">Contratar</button></a>
+                </div>
+                <div class="col-md-4" style="margin-right: 50px;width: 25%;border-radius: 15px;box-shadow: 0.5px 0.5px 3px #212121;">
+                    <h1 style="margin-top: 20px;color: #487cff;background-color: #ffffff;width: auto;font-size: 40px;font-family: Roboto;font-weight: bold;">Plus</h1>
+                    <p style="color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 15px;font-family: Roboto;font-weight: 800;">PLANO IDEAL PARA QUEM TEM FUNCIONÁRIOS</p>
+                    <h1 style="color: #212121;background-color: #ffffff;width: auto;font-size: 40px;font-family: Roboto;font-weight: bolder;margin-bottom: 20px;">R$ 249,00</h1>
+                    <ul style="text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 15px;font-family: Roboto;font-weight: 800;">
+                        <li>Abertura de Empresa (GRÁTIS)</li>
+                        <li>Contabilidade Completa</li>
+                        <li>Emissor de NF's</li>
+                        <li>Emissor de Boletos</li>
+                        <li>Painel Financeiro</li>
+                        <li>Atendimento personalizado</li>
+                    </ul>
+                    <p style="margin-top: 75px;margin-left: 15px;text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 10px;font-family: Roboto;font-weight: 800;">Até o 1ª funcionário grátis</p>
+                    <p style="margin-top: -15px;margin-left: 15px;text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 10px;font-family: Roboto;font-weight: 800;">Até R$ 50.000 de faturamento</p><a href="Contato.html"><button class="btn btn-primary" id="buttonpreco" type="button">Contratar</button></a>
+                </div>
+                <div class="col-md-4" style="margin-right: 50px;width: 25%;border-radius: 15px;box-shadow: 0.5px 0.5px 3px #212121;">
+                    <h1 style="margin-top: 20px;color: #487cff;background-color: #ffffff;width: auto;font-size: 40px;font-family: Roboto;font-weight: bold;">Premium</h1>
+                    <p style="color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 15px;font-family: Roboto;font-weight: 800;">PARA TUDO QUE VOCÊ PRECISA EM UM SÓ LUGAR</p>
+                    <h1 style="color: #212121;background-color: #ffffff;width: auto;font-size: 40px;font-family: Roboto;font-weight: bolder;margin-bottom: 20px;">R$ 299,00</h1>
+                    <ul style="text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 15px;font-family: Roboto;font-weight: 800;">
+                        <li>Abertura de Empresa (GRÁTIS)</li>
+                        <li>Contabilidade Completa</li>
+                        <li>Emissor de NF's</li>
+                        <li>Emissor de Boletos</li>
+                        <li>Painel Financeiro</li>
+                        <li><strong>Atendimento personalizado</strong><br></li>
+                        <li>Múltiplos&nbsp;canais de atendimento<br></li>
+                    </ul>
+                    <p style="margin-top: 50px;margin-left: 15px;text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 10px;font-family: Roboto;font-weight: 800;"><strong>Até o 2ª funcionário grátis</strong><br></p>
+                    <p style="margin-top: -15px;margin-left: 15px;text-align: left;color: #6b6b6b;background-color: #ffffff;width: auto;font-size: 10px;font-family: Roboto;font-weight: 800;">Até R$ 100.000 de faturamento</p><a href="Contato.html"><button class="btn btn-primary" id="buttonpreco" type="button">Contratar</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 100px;margin-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h2 style="font-size: 40px;  margin-bottom: 100px;">Trocar de contador <font color="#487cff">é fácil com a Procont</font></h2></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-3" style="width: 21%;margin-right: 30px;padding-top: 80px;padding-bottom: 60px;text-align: center;border: solid;border-width: 2px;border-color: #487cff;">
+                    <h3 style="color: #487cff;padding-bottom: 20px;font-size: 30px;font-family: Roboto;">Passo 1</h3>
+                    <p style="color: #212121;font-family: Roboto;font-size: 14px;">Entre em contato com nosso <br>time pelo WhatsApp ou formulário.<br><br></p>
+                </div>
+                <div class="col-md-3" style="width: 21%;margin-right: 30px;padding-top: 80px;padding-bottom: 60px;text-align: center;border: solid;border-width: 2px;border-color: #487cff;">
+                    <h3 style="color: #487cff;padding-bottom: 20px;font-size: 30px;font-family: Roboto;">Passo 2</h3>
+                    <p style="color: #212121;font-family: Roboto;font-size: 14px;">Após efetuado o pagamento da <br>1ª mensalidade nós iniciamos <br>a prestação de ser viços.<br></p>
+                </div>
+                <div class="col-md-3" style="width: 21%;margin-right: 30px;padding-top: 80px;padding-bottom: 60px;text-align: center;border: solid;border-width: 2px;border-color: #487cff;">
+                    <h3 style="color: #487cff;padding-bottom: 20px;font-size: 30px;font-family: Roboto;">Passo 3</h3>
+                    <p style="color: #212121;font-family: Roboto;font-size: 14px;">Nesta etapa, nós solicitamos a <br>você os documentos para a <br>transferência da sua antiga <br>contabilidade.<br></p>
+                </div>
+                <div class="col-md-3" style="width: 21%;padding-top: 80px;padding-bottom: 60px;text-align: center;border: solid;border-width: 2px;border-color: #487cff;">
+                    <h3 style="color: #487cff;padding-bottom: 20px;font-size: 30px;font-family: Roboto;">Passo 4</h3>
+                    <p style="color: #212121;font-family: Roboto;font-size: 14px;">Pronto! Agora você é digital e <br>f az par te do time Procont.<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: center;">
+            <div class="row">
+                <div class="col-md-12"><h2 id="burocracia" >Viu só como é <font color="#487cff">fácil</font>? Sem burocracia e super rápido</h2></div>
+            </div><a href="Contato.html"><button id=botaocontador class="btn btn-primary" type="button" >Trocar de contador</button></a>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row" style="text-align: center;margin-top: 70px;margin-bottom: 100px;">
+                <div class="col-md-12">
+                    <h2 style="display: block;font-size: 40px;font-family: Roboto;">Ainda com dúvidas?<br></h2><h2 style="font-size: 16px;font-family: Roboto;">Clique <a class="linkduvida" color="#003366" href="">aqui</a> e veja nossa área de dúvidas frequentes ou aqui <a class="linkduvida" color="#003366" href="Contato.html">entre em contato</a><br /></h2>
+                </div>
+            </div>
+        </div>
+    </section><script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/c310d4f8-eb96-4d72-9f7e-7242f8571c6e-loader.js" ></script><div class="alert text-center cookiealert" role="alert">
+    A Procont utiliza cookies para melhorar sua navegação e experiência. <a href="politicadeprivacidade.html" target="_blank">Política de Privacidade.</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies">
+        Prosseguir
+    </button>
+</div><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T4K0ELTBB1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T4K0ELTBB1');
+</script>
+    <footer class="footer-dark" style="padding-top: 50px;padding-bottom: 50px;background-color: #487cff;">
+        <div class="container">
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-md-4" style="font-family: roboto;color: #ffffff;width: 60%;"><div>
+<a href="index.html"><img src="assets/img/logotipofundoazul.svg" style="height: auto;width: 30%;margin-bottom: 10px;" class="logo"></a>
+</div>
+                    <hr style="margin-top: -0.5%;color: #ffffff;">
+                    <h2 style="display: block;font-size: 25px;font-family: Roboto;"><br>Mídias sociais<br></h2>
+                    <h2 style="font-size: 16px;font-family: Roboto;">Siga as nossas páginas e saiba as novidades sobre a Procont<br></h2>
+                    <div class="social-icons" style="text-align: left;background-color: #487cff;margin-bottom: 20px;"><a href="https://www.facebook.com/procontdigital/"><i class="fab fa-facebook-square"></i></a><a href="https://www.instagram.com/procontdigital/"><i class="fab fa-instagram"></i></a><a href="https://wa.me/message/P5XFWB7TOA42P1"><i class="fab fa-whatsapp"></i></a><a href="https://br.linkedin.com/company/procont-contabilidade"><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+                <div class="col-md-4" style="width: 20%;"><a class=termos href="politicadeprivacidade.html">POLÍTICA DE PRIVACIDADE<br /></a>
+</div>
+                <div class="col-md-4" style="width: 20%;"><a class=termos href="termosdeuso.html">TERMOS DE USO<br /></a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="font-family: roboto;color: #ffffff;">
+                    <hr style="margin-top: -0.5%;color: #ffffff;">
+                    <p style="font-size: 14px;">A Procont buscar oferecer aos empreendedores maior transparência, praticidade e economia. Usando a tecnologia para popularizar os serviços de contabilidade online para micro e pequenas empresas.<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-md-4" style="font-family: roboto;color: #ffffff;width: 60%;">
+                    <p style="font-size: 23px;">Procont Escritório de Contabilidade</p>
+                    <div style="line-height: 0.7;margin-bottom: 40px;">
+                        <p>ARACAJU:</p>
+                        <p style="font-size: 14px;">R. Deoseane Vieira de Freitas, 3610, sala 1, Grangeru, 49026-040</p>
+                        <p style="font-size: 14px;margin-left: 15px;">• Procont Contabilidade | CNPJ: 26.154.946/0001-04<br></p>
+                        <p style="font-size: 14px;">- CRCPJ: SE-000598/O</p>
+                    </div>
+                    <div style="line-height: 0.7;">
+                        <p>ESTÂNCIA:</p>
+                        <p style="font-size: 14px;">R. Monsenhor José Paes Santiago, 212, Centro, 49200-000</p>
+                        <p style="font-size: 14px;margin-left: 15px;">• Procont Contabilidade | CNPJ: 08.107.620/0001-36</p>
+                        <p style="font-size: 14px;margin-left: 15px;">• Procont Tecnologia | CNPJ: 40.502.805/0001-58</p>
+                        <p style="font-size: 14px;">- CRCPJ: SE-000419/O</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 item text">
+                    <p style="color: #b2b3bb;">© 2021 Procont Contabilidade LTDA. Todos os direitos reservados.<br></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/EstadoeCidades.js"></script>
+    <script src="assets/js/JavaScript.js"></script>
+</body>
+
+</html>
