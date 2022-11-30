@@ -1,0 +1,199 @@
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  color: #fff;
+  background: #487cff;
+}
+
+.cookiealert.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.cookiealert a {
+  text-decoration: underline;
+}
+
+.cookiealert .acceptcookies {
+  margin-left: 10px;
+  vertical-align: baseline;
+  padding: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #487cff;
+  width: auto;
+  font-size: 50px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+a #button {
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 5px 5px 10px #ccc;
+  border-radius: 2px;
+}
+
+.btn-outline-primary:active {
+  background-color: #ffffff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffffff;
+}
+
+.btn-outline-primary {
+  color: #487cff;
+}
+
+.termos:hover {
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: initial;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: #487cff;
+}
+
+#navcol-1 .nav-link:hover {
+  color: #ffffff;
+  background-color: #487cff;
+  border-color: #487cff;
+  border-radius: 10px;
+}
+
+#navcol-1 .nav-link {
+  color: #487cff;
+}
+
+div a .logo {
+  width: 180px;
+}
+
+.btn-outline-primary {
+  color: #002dff;
+  border-color: #ffffff;
+}
+
+div .formulario {
+  margin-top: 40px;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+div .form-group {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+div .form-control {
+  color: #c2c2c2;
+}
+
+div .form-control::placeholder {
+  color: #c2c2c2;
+}
+
+div .informativo {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+div .baixarf {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+div .baixarf button {
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #ffffff;
+  background-color: #0464eb;
+  box-shadow: 2px 2px 3px #0542e6;
+}
+
+div .baixar {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+div .baixar button {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #0464eb;
+  box-shadow: 2px 2px 3px #0542e6;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav-item {
+  color: #487cff;
+  margin-right: 2px;
+}
+
+@media (min-width:768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 24%;
+    margin: 3px;
+  }
+}
+
+#navcol-1 {
+  margin-right: 60px;
+}
+
+.politica {
+  color: #999999;
+}
+

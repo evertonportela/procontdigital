@@ -98,7 +98,7 @@ h1 {
   background-color: #487cff;
   width: auto;
   font-size: 50px;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-weight: bold;
 }
 
@@ -133,18 +133,12 @@ a #button {
   color: #487cff;
 }
 
-#burocracia {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 30px;
+#trocarqualquerhora {
   font-family: 'Roboto';
-}
-
-#botaocontador:hover {
-  color: #487cff;
-  background-color: #fff;
-  border-color: #487cff;
-  border-radius: 10px;
+  background-color: #ffffff;
+  color: #212121;
+  text-align: left;
+  font-size: 16px;
 }
 
 .termos:hover {
@@ -163,6 +157,13 @@ a #botaocontador {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #487cff;
+  border-color: #487cff;
+  border-radius: 10px;
+}
+
+#botaocontador:hover {
+  color: #487cff;
+  background-color: #fff;
   border-color: #487cff;
   border-radius: 10px;
 }
@@ -215,10 +216,6 @@ div .titulo {
 
 .nav-link:focus, .nav-link:hover {
   color: #487cff;
-}
-
-#navcol-1 {
-  margin-right: 60px;
 }
 
 #navcol-1 .nav-link:hover {
@@ -304,6 +301,14 @@ h2 .linkduvida {
   color: #002dff;
 }
 
+h3 .linkduvida {
+  color: #487cff;
+}
+
+h3 .linkduvida:hover {
+  color: #002dff;
+}
+
 a img {
   width: 70%;
 }
@@ -336,6 +341,51 @@ a img {
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 10px;
+}
+
+#buttonservicos {
+  color: #fff;
+  background-color: #487cff;
+  border-color: #487cff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#buttonservicos:hover {
+  color: #487cff;
+  background-color: #fff;
+  border-color: #487cff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#buttontrocar {
+  display: block;
+  color: #fff;
+  background-color: #487cff;
+  border-color: #487cff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+#buttontrocar:hover {
+  color: #487cff;
+  background-color: #fff;
+  border-color: #487cff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .precoicone {
@@ -398,5 +448,124 @@ a img {
 
 .close:hover {
   background: #00d9ff;
+}
+
+@media (min-width:768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 24%;
+    margin: 3px;
+  }
+}
+
+#navcol-1 {
+  margin-right: 60px;
+}
+
+.tiposervicos {
+  color: #487cff;
+  font-size: 25px;
+  font-family: 'Roboto';
+  font-weight: 900;
+}
+
+.textoservicos {
+  color: #212121;
+  font-size: 15px;
+  font: 400 1em 'Roboto';
+  margin-left: 30px;
+}
+
+.backtexto {
+  border: .8em #fc3d6c;
+  border-radius: 5px;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  background-color: #fc3d6c;
+  font: 400 0.8em 'Roboto';
+  background-clip: border-box;
+}
+
+.iconservicos {
+  width: 5%;
+  margin-right: 5px;
+  justify-content: center;
+}
+
+.ideal {
+  display: inline-block;
+  color: #487cff;
+  width: auto;
+  font-size: 50px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.cursor2 {
+  display: inline-block;
+  background-color: #003366;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #212121;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.accordion:hover {
+  color: #487cff;
+}
+
+.active {
+  color: #487cff;
+  font-weight: bold;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+#detalhe {
+  max-width: 600px;
+  border: 0.1px solid #ccc;
+}
+
+a #botaocontato {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #487cff;
+  border-color: #487cff;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#botaocontato:hover {
+  color: #487cff;
+  background-color: #fff;
+  border-color: #487cff;
+  border-radius: 10px;
+}
+
+.politica {
+  color: #999999;
 }
 

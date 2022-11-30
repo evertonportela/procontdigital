@@ -1,3 +1,4 @@
+/*Cookies e permissoes */
 (function () {
     "use strict";
 
@@ -47,8 +48,175 @@
         return "";
     }
 })();
+
+/*Efeito Digitando Introdução */
+
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["prática", "segura", "econômica", "online"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+/*Efeito Digitando serviços */
+
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Desenvolvedores')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Advogados')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Fotógrafos')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Engenheiros')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Designer Gráfico')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('produtores de conteúdos')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Designer de Moda')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Arquitetos')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Médicos')
+    .pauseFor(2500)
+    .start();
+
+
+
+
+
+/*Botao de seleçao serviços */
+
+ function toggleDiv1() {
+    if (document.getElementById('serviço1').style.display == 'none') {
+       document.getElementById('serviço1').style.display = 'block';
+       document.getElementById('imagemservico1').style.display = 'block';
+       document.getElementById('serviço2').style.display = 'none';
+       document.getElementById('serviço3').style.display = 'none';
+       document.getElementById('serviço4').style.display = 'none';
+       document.getElementById('serviço5').style.display = 'none';
+       document.getElementById('imagemservico2').style.display = 'none';
+       document.getElementById('imagemservico3').style.display = 'none';
+       document.getElementById('imagemservico4').style.display = 'none';
+       document.getElementById('imagemservico5').style.display = 'none';
+    } else {
+    }
+ }
+ function toggleDiv2() {
+    if (document.getElementById('serviço2').style.display == 'none') {
+       document.getElementById('serviço2').style.display = 'block';
+       document.getElementById('imagemservico2').style.display = 'block';
+       document.getElementById('serviço1').style.display = 'none';
+       document.getElementById('serviço3').style.display = 'none';
+       document.getElementById('serviço4').style.display = 'none';
+       document.getElementById('serviço5').style.display = 'none';
+       document.getElementById('imagemservico1').style.display = 'none';
+       document.getElementById('imagemservico3').style.display = 'none';
+       document.getElementById('imagemservico4').style.display = 'none';
+       document.getElementById('imagemservico5').style.display = 'none'; 
+    } else {
+    }
+ }
+ function toggleDiv3() {
+    if (document.getElementById('serviço3').style.display == 'none') {
+       document.getElementById('serviço3').style.display = 'block';
+       document.getElementById('imagemservico3').style.display = 'block';
+       document.getElementById('serviço1').style.display = 'none';
+       document.getElementById('serviço2').style.display = 'none';
+       document.getElementById('serviço4').style.display = 'none';
+       document.getElementById('serviço5').style.display = 'none';
+       document.getElementById('imagemservico1').style.display = 'none';
+       document.getElementById('imagemservico2').style.display = 'none';
+       document.getElementById('imagemservico4').style.display = 'none';
+       document.getElementById('imagemservico5').style.display = 'none';
+    } else {
+    }
+ }
+ function toggleDiv4() {
+    if (document.getElementById('serviço4').style.display == 'none') {
+       document.getElementById('serviço4').style.display = 'block';
+       document.getElementById('imagemservico4').style.display = 'block';
+       document.getElementById('serviço1').style.display = 'none';
+       document.getElementById('serviço2').style.display = 'none';
+       document.getElementById('serviço3').style.display = 'none';
+       document.getElementById('serviço5').style.display = 'none';
+       document.getElementById('imagemservico1').style.display = 'none';
+       document.getElementById('imagemservico2').style.display = 'none';
+       document.getElementById('imagemservico3').style.display = 'none';
+       document.getElementById('imagemservico5').style.display = 'none';
+    } else {
+    }
+ }
+ function toggleDiv5() {
+    if (document.getElementById('serviço5').style.display == 'none') {
+       document.getElementById('serviço5').style.display = 'block';
+       document.getElementById('imagemservico5').style.display = 'block';
+       document.getElementById('serviço1').style.display = 'none';
+       document.getElementById('serviço2').style.display = 'none';
+       document.getElementById('serviço3').style.display = 'none';
+       document.getElementById('serviço4').style.display = 'none';
+       document.getElementById('imagemservico1').style.display = 'none';
+       document.getElementById('imagemservico2').style.display = 'none';
+       document.getElementById('imagemservico3').style.display = 'none';
+       document.getElementById('imagemservico4').style.display = 'none';
+    } else {
+    }
+ }
+
+
+
+
+
 	
-	
+/*Formulario */
 $(function($){
 			
 			$("form").submit(function(event){
@@ -56,7 +224,7 @@ $(function($){
 				event.preventDefault();
 				
 				$.ajax({
-				url: "https://formspree.io/f/mgeradoy",
+				url: "https://submit-form.com/Ug2XHzCb",
 				method: "POST",
 				data: {
 					nome: $("#nome").val(),
@@ -80,6 +248,25 @@ $(function($){
 					});
 				});
 			});
+      
 
+    /*Fac */
 
-
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+      
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }

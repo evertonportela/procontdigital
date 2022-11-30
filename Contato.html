@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -12,13 +12,36 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/SocialIcons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/EstadoeCidades.js"></script>
+    <script src="assets/js/JavaScript.js"></script>
+    
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '436075008547458');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=436075008547458&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
 </head>
 
 <body style="background-image: url(&quot;assets/img/fundosite.gif&quot;);">
     <div class="container">
         <div class="row">
             <div class="col-md-6"><div>
-<a href="index.html"><img src="assets/img/logotipofundoazul.svg" style="margin-top: 100px;width: 40%;margin-bottom: 100px;" class="logo"></a>
+<a href="https://procont.digital"><img src="assets/img/logotipofundoazul.svg" style="margin-top: 100px;width: 40%;margin-bottom: 100px;" class="logo"></a>
 </div><h2 style="text-align: left;color: rgb(255,255,255);font-size: 40px;font-family: Roboto;font-weight: bolder;">Ainda com <span style="color: #487cff;">dúvidas?</span></h2>
                 <h2 style="margin-top: 15px;text-align: left;color: rgb(255,255,255);font-size: 26px;font-family: Roboto;font-weight: lighter;">Estamos com os nossos contadores experts prontos para falar com você.&nbsp;<br></h2>
                 <h2 style="margin-top: 15px;text-align: left;color: rgb(255,255,255);font-size: 14px;font-family: Roboto;">Fique tranquilo(a) que o nosso contato é sem compromisso. Você só vai contratar a Procont quando tiver certeza de que somos a melhor opção para a sua empresa.<br></h2>
@@ -39,11 +62,17 @@
     </script>
 
 
-<form class="formulario">
-
+<!-- <form class="formulario"> -->
+<form action="https://submit-form.com/Ug2XHzCb">
+    <input
+    type="hidden"
+    name="_redirect"
+    value="https://procont.digital/Contato.html"
+  />
+    
 	<div class="form-group">
     <label for="exampleFormControlSelect1">Qual serviço deseja?</label>
-    <select class="form-control" id="serviço" placeholder="Selecione o serviço" required>
+    <select class="form-control" id="serviço" name="serviço" placeholder="Selecione o serviço" required>
       <option>Selecione o serviço</option>
       <option>Trocar de contador</option>
       <option>Abertura de empresa</option>
@@ -53,17 +82,17 @@
   
    <div class="form-group">
     <label for="exampleInputPassword1">Qual seu nome?</label>
-    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
   </div>
 	
   <div class="form-group">
     <label for="exampleInputEmail1">Qual seu e-mail?</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email completo" required>
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Digite seu email completo" required>
   </div>
   
     <div class="form-group">
     <label>Qual o seu estado?</label>
-    <select class="form-control" id="estado" onchange="buscaCidades(this.value)" placeholder="Selecione seu estado" required>
+    <select class="form-control" id="estado" name="estado" onchange="buscaCidades(this.value)" placeholder="Selecione seu estado" required>
 	<option value="estados">Selecione seu estado</option>
 	<option value="AC">Acre</option>
 	<option value="AL">Alagoas</option>
@@ -97,14 +126,14 @@
   
       <div class="form-group">
     <label for="exampleFormControlSelect1">Qual a sua cidade?</label>
-    <select class="form-control" id="cidade" required>
+    <select class="form-control" id="cidade" name="cidade" required>
 	<option disabled>Selecione seu estado</option>
     </select>
   </div>
   
    <div class="form-group">
     <label for="exampleInputPassword1">Telefone com DDD (apenas os números)</label>
-    <input type="text" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
   </div>
   
   <div class="informativo">
@@ -118,9 +147,6 @@
             </div>
         </div>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/EstadoeCidades.js"></script>
-    <script src="assets/js/JavaScript.js"></script>
 </body>
 
 </html>
